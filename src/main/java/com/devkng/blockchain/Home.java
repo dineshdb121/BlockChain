@@ -46,7 +46,7 @@ public class Home {
         System.out.println("From b2 : " + b1.getBlockHash() + " Current BlockHash Code b2 : " + b.getBlockHash());
          */
         int currentHash = 0;
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < blockChain.size() + 1 ; i++) {
             // -1094262049 -> Dk ->  -1094262049 //-695162283 -> Dinesh -> -695162283 //461296306 9Rs ->
             Transaction t = new Transaction(gen + i*2,true,777471*i+675);
             String[] si = {"Dinesh sends " + i + " to DhanushRaj ", " DhanushRaj sends " + i + " to Gokul"};

@@ -81,7 +81,7 @@ class MultithreadInterfaces extends Thread {
                     Block b = new Block(Prototype.currentHashs,t);
                     //b.setPreviousHash(blockChain.get(blockChain.size() - 1).getBlockHash());
                     //b.setTransaction(t);
-                    System.out.println( blockChain.size() + 1 + "  You Voted Successfully Block Hash code : " + blockChain.get(blockChain.size() - 1).getBlockHash());
+                    System.out.println( blockChain.size() - 1 + "  You Voted Successfully Block Hash code : " + blockChain.get(blockChain.size() - 1).getBlockHash());
                     blockChain.add(b);
                    // blockChain.add(b);
                     //Prototype.currentHashs = blockChain.get(blockChain.size()-1).getBlockHash();
@@ -95,7 +95,7 @@ class MultithreadInterfaces extends Thread {
 
             // Output
             System.out.println("\uD835\uDDB4\uD835\uDDCC\uD835\uDDBE\uD835\uDDCB\uD835\uDDCC \uD835\uDDBA\uD835\uDDCB\uD835\uDDBE  : ");
-            for (int i = 0; i < n - 1; i++) {
+            for (int i = 0; i <  1; i++) {
                 System.out.println(userslistloop.get(i));
             }
             System.out.println("\uD835\uDDAF\uD835\uDDBA\uD835\uDDCB\uD835\uDDCD\uD835\uDDC2\uD835\uDDBE\uD835\uDDCC \uD835\uDDBA\uD835\uDDCB\uD835\uDDBE : ");
@@ -103,7 +103,7 @@ class MultithreadInterfaces extends Thread {
                 System.out.println(parties.get(i).toString());
             }
             try {
-                Thread.sleep(5000);
+                Thread.sleep(6000);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
